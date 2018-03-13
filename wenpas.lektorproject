@@ -1,0 +1,5 @@
+[project]
+name = wenpas
+
+[servers.ghpages]
+target = ghpages+https://wenpas/wenpas.github.io
