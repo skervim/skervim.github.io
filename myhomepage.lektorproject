@@ -1,2 +1,5 @@
 [project]
-name = myhomepage
+name = wenpas
+
+[servers.ghpages]
+target = ghpages+https://wenpas.github.io
