@@ -1,16 +1,22 @@
 <!doctype html>
 <meta charset="utf-8">
+<head>
+
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css" />
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+
 <title>{% block title %}Welcome{% endblock %} — myhomepage</title>
+</head>
 <body>
   <header>
-    <h1>myhomepage</h1>
+    <h1>Skervim</h1>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
           ['/blog', 'Blog'],
+          ['/chessblog', 'Chessblog'],
           ['/projects', 'Projects'],
           ['/about', 'About']
         ] %}
@@ -24,6 +30,7 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2018 by wenpas.
+    &copy; Copyright 2018 by skervim.
   </footer>
+    <script>lichess_widgets.profile_big("dark", "skervim", "My Liches;");</script>
 </body>
