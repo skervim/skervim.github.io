@@ -1,4 +1,21 @@
 title: About this Website
 ---
 body:
-This website is under construction, please come back in a month :)
+
+I've just started building this website. In the meantime, you can find me here:
+<div class="col-sm-4 icon-bar">
+<a href="https://github.com/skervim/" title="Read skervim's code at Github"
+><i class="fa fa-github"></i></a>
+<a href="https://twitter.com/skervim" title="Find skervim on Twitter"
+><i class="fa fa-twitter"></i></a>
+<a href="https://www.reddit.com/user/skervim" title='Find skervim at Reddit'
+<i class="fa fa-reddit"></i></a>
+</div>
+
+The very brave ones may challenge me in a game of chess ;)
+<div>
+<center>
+<script>lichess_widgets.profile_big("light", "skervim", "skervim at lichess");</script>
+</center>
+</div>
+

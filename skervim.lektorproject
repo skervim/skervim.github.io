@@ -7,15 +7,5 @@ target = ghpages+https://skervim/skervim.github.io?cname=skervim.com
 [packages]
 lektor-disqus-comments = 0.2
 lektor-webpack-support = 0.4
-
-[alternatives.en]
-name = English
-primary = yes
-locale = en_US
-
-[alternatives.de]
-name = German
-url_prefix = /de/
-locale = de_DE
-
+lektor-markdown-highlighter = 0.2
 
