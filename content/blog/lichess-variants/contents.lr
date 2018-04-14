@@ -9,35 +9,81 @@ body:
 ------
 I was curious about the popularity of chess variants at [https://lichess.org](https://lichess.org/).
 
-So I grabbed the data from the lichess [game database](https://database.lichess.org/) and created some visualizations. I hope you enjoy them!
+So I grabbed the data from the lichess game [database](https://database.lichess.org/) and created some visualizations.
 
 ------
 
 
-#### Overview
-Let's start with a heatmap. You can hover over it with your mouse to see the exact number of games played of each variant in each month.
+#### <em>Average</em> number of games played per *year* and variant
+
+Let's start with an overview and look at the *average* number of games played per year.
+
+
+
+
+
 <div>
 <center>
 <script
-    src="heatmap.js"
-    id="88837fdc-4349-4ec7-9200-eae02f0d5421"
-    data-bokeh-model-id="d5ec1fc1-fc67-469b-b3b2-ca95b411e88a"
-    data-bokeh-doc-id="75346450-dec1-49e2-a011-cc2087448112"
+    src="multibars_year.js"
+    id="270a2125-1395-4efb-ab6b-f6d36e365fdf"
+    data-bokeh-model-id="659cea59-c725-4d0b-98d7-b21dedf4a01b"
+    data-bokeh-doc-id="0498cf74-2fda-4441-88b0-01ac44049c51"
 ></script>
 </center>
 </div>
 
+<center><small>Use the tools in the toolbar on the right to zoom in and out!</small></center>
+
+
+<div>
+<center>
+<script
+    src="heatmap_year.js"
+    id="0d7d3671-1006-4c4b-9f94-797ee2dcd4f2"
+    data-bokeh-model-id="549d8f79-f604-4a96-a49e-d3daf0432fe8"
+    data-bokeh-doc-id="6b291651-d591-423e-bb73-401befbc6436"
+></script>
+</center>
+</div>
+
+<center><small>Hover over the heatmap with your mouse for more information.</small></center>
+
+As you can see, the most popular variants happen to be *crazyhouse*, *antichess* and *atomic chess*,
+followed by *chess960* and *three-check chess*. Less popular variants include *horde*, *king of the hill* and *racing kings*.
+
+Let's get more specific!
 
 ------
-Cool, now click on the following chess variants for individual numbers.
+
+#### <em>Total</em> number of games played per *month* and variant
+
+<div>
+<center>
+<script
+    src="curves_month.js"
+    id="d73fd061-5b1d-400a-9810-5407364826ec"
+    data-bokeh-model-id="c53bfa3b-260f-4d69-af7e-ffebc2617876"
+    data-bokeh-doc-id="fb37baad-fab1-4b07-8dfd-d8bcd45078cc"
+></script>
+</center>
+</div>
+
+Clearly you can see: more and more games of chess variants are played on lichess over time.
+
+In the following we will look at which variants are gaining most in popularity!
+
+------
+
+Choose a chess variant and click on it in order to directly jump to the corresponding plot!
 - [Antichess](#antichess)
 - [Atomic](#atomic)
-- [Chess 960](#chess960)
-- [Crazy House](#crazyhouse)
+- [Chess960](#chess960)
+- [Crazyhouse](#crazyhouse)
 - [Horde](#horde)
 - [King of the hill](#kingofthehill)
 - [Racing Kings](#racingkings)
-- [Three Check](#threecheck)
+- [Three-Check](#threecheck)
 
 
 
@@ -45,170 +91,170 @@ Cool, now click on the following chess variants for individual numbers.
 <a name="antichess"></a>
 #### Antichess
 
+In <a  href='https://en.wikipedia.org/wiki/Losing_Chess'> antichess </a> the objective is to <i>lose</i> all your peaces (or reach a stalemate).
 
 <div>
 <center>
 <script
     src="bar_antichess.js"
-    id="28fba6c1-d1e6-4a2c-b29e-7a890add6a57"
-    data-bokeh-model-id="6e9f9365-9f21-44a7-a4c6-3c1a39bf7d8e"
-    data-bokeh-doc-id="1e86b5a6-49be-422f-823e-bd40ecb5f491"
+    id="17fdfa5d-d806-44bf-afab-34fd9723ffc8"
+    data-bokeh-model-id="6909e13c-cf6a-4584-992a-0a23f47f47ea"
+    data-bokeh-doc-id="6f3aa140-a093-4c12-93d7-1dc85c2f6300"
 ></script>
-</div>
 </center>
+</div>
 
-In <a  href='https://en.wikipedia.org/wiki/Losing_Chess'> antichess </a> the objective is to <i>lose</i> all your peaces or reach a stalemate.
-
+The number of games played per month of *antichess* - the second most popular chess variant on lichess - increases steadily. In march, **154723** games were played!
 
 ------
 <a name="atomic"></a>
 #### Atomic
 
 
+In <a href='https://en.wikipedia.org/wiki/Atomic_chess'> atomic chess </a> captures result in a nuclear explosion destroying all surrounding pieces -  except pawns.
+
 <div>
 <center>
 <script
     src="bar_atomic.js"
-    id="0d293427-76b9-4afa-95d7-cae0a254f5d7"
-    data-bokeh-model-id="0e2a8ef9-bb2e-4f91-95d8-24a15ad41066"
-    data-bokeh-doc-id="869c609d-cc78-4660-ace3-c65bb7ea9e7a"
+    id="7ff36197-1463-43e8-b8d8-3c3b47002f7f"
+    data-bokeh-model-id="ba0bab12-a254-492f-adae-ecafa622267b"
+    data-bokeh-doc-id="83edba13-56b2-480f-bc27-f4ec84ac3709"
 ></script>
-</div>
 </center>
+</div>
 
-In <a href='https://en.wikipedia.org/wiki/Atomic_chess'> atomic chess </a> captures result in a nuclear explosion destroying all surrounding pieces -  except pawns.
 
+*Atomic chess* had its peak in february but is still gaining robustly in popularity.
 
 ------
 <a name="chess960"></a>
-#### Chess 960
+#### Chess960
+
+In <a href='https://en.wikipedia.org/wiki/Chess960'> Chess960 </a> the starting position of the pieces on both players' home ranks is randomized (*960* is the number of possible starting formations).
 
 <div>
 <center>
 <script
     src="bar_chess960.js"
-    id="41d01c43-ae3b-4139-8925-76abc4099ced"
-    data-bokeh-model-id="84970390-b7d5-45ab-83ae-5cbe91886562"
-    data-bokeh-doc-id="6ba80426-5640-457a-9eef-c447d230c227"
+    id="87d881ce-7633-4ca7-abcf-4a6591e23eac"
+    data-bokeh-model-id="b37bef08-1fb3-47fe-a3b9-e8348f430bd2"
+    data-bokeh-doc-id="7bae4299-334a-49ca-9ed9-1ffbdb9c1744"
 ></script>
-</div>
 </center>
+</div>
 
-In <a href='https://en.wikipedia.org/wiki/Chess960'> Chess960 </a> the starting position of the pieces of both players' home ranks is randomized (960 possible formations are possible).
-
-
+Also, more and more played is *Chess960*. What a beautiful increase, right?
 
 ------
 <a name="crazyhouse"></a>
-#### Crazy House
+#### Crazyhouse
 
+[Crazyhouse](https://en.wikipedia.org/wiki/Crazyhouse) allows players to introduce captured pieces back to the board as their *own*. Crazy, right?
 
 <div>
 <center>
 <script
     src="bar_crazyhouse.js"
-    id="0fff18b2-a817-427c-b9fe-8c2678be80a0"
-    data-bokeh-model-id="fee233fd-4830-469f-b714-729ad2167a3e"
-    data-bokeh-doc-id="929df3f7-7805-41a0-92ac-6990670b1a38"
+    id="6e71fa72-ca90-440e-a815-124a792da6de"
+    data-bokeh-model-id="98bd75ed-0677-4017-9264-a7f073fa9829"
+    data-bokeh-doc-id="d902c909-8fb2-4b05-9292-a08d98cd58bb"
 ></script>
-</div>
 </center>
+</div>
 
-[Crazy house](https://en.wikipedia.org/wiki/Crazyhouse) allows players to introduce captured pieces back to board as their own.
-
-Crazy, right?
-
-
+While crazyhouse had its peak in march (**183112** games), it's popularity isn't increasing that much.
+Still, it's the most popular chess variant on lichess!
 
 ------
 <a name="horde"></a>
 #### Horde
 
+In the [horde](https://en.wikipedia.org/wiki/Dunsany%27s_Chess) chess variant a horde of  (32!) bloodthirsty pawns has to be defeated.
 
 <div>
 <center>
 <script
     src="bar_horde.js"
-    id="32751605-0709-4e4d-9b61-88ef1ba78172"
-    data-bokeh-model-id="b2f7d066-9151-4317-9025-900daed4f240"
-    data-bokeh-doc-id="f0d08e70-c7ba-4d3f-a673-1a2df4da971f"
+    id="27923c6c-7a01-43a1-a38f-b1cb36ace64f"
+    data-bokeh-model-id="c210cf1a-cf9f-4185-a4eb-fd5d9eefe69e"
+    data-bokeh-doc-id="99618ace-fff3-4d6a-82a6-8a8bff01b60b"
 ></script>
-</div>
 </center>
+</div>
 
-In the [horde](https://en.wikipedia.org/wiki/Dunsany%27s_Chess) variant a horde of bloodthirsty pawns has to be defeated.
+Despite being scary, it's also getting more popular!
 
 ------
 <a name="kingofthehill"></a>
 #### King of the hill
 
+In *King of the hill* a player is victorious if she moves her king to one of the central four squares (or in case of the usual checkmate).
+
 <div>
 <center>
 <script
     src="bar_kingofthehill.js"
-    id="74df44e6-d585-47d5-b0e7-91d055c5784b"
-    data-bokeh-model-id="ed7689eb-aae2-4976-ab75-069deff9d8ff"
-    data-bokeh-doc-id="c12dc39b-e512-47c7-a279-5b561d8d1790"
+    id="baf4dcb6-394d-4350-88c4-54fc7210f392"
+    data-bokeh-model-id="9dfc4604-a22f-4e23-b915-05d0e2b2da3f"
+    data-bokeh-doc-id="dcc1014b-a241-453a-94a0-fa7264d51cfe"
 ></script>
-</div>
 </center>
+</div>
 
-In King of the hill a player is victorious if she moves her king to one of the central four squares (in addition to the usual checkmate).
-
+*King of the hill* seems to get played less lately. Do you know why?
 
 ------
 <a name="racingkings"></a>
 #### Racing Kings
 
+To win this chess variant you must race your king to the eighth rank
+(<small>a pure psychological and physical torture for the poor slow king.</small>)
 <div>
 <center>
 <script
     src="bar_racingkings.js"
-    id="0b85ccb7-006b-4bf1-af3d-ed45cafcfb5b"
-    data-bokeh-model-id="13c7b3be-369c-4dc3-83be-c3a17a89a214"
-    data-bokeh-doc-id="d1f5a882-4977-4690-926b-388694705f0a"
+    id="63f0e314-08a6-4630-ab7f-5ceea3ca3e54"
+    data-bokeh-model-id="0cbc76ef-0e4d-4cba-ba5e-858cb1ec5c7e"
+    data-bokeh-doc-id="b324a552-7ed7-43fe-ab0c-faf9f6917c8f"
 ></script>
-</div>
 </center>
+</div>
 
-To win this chess variant you must race your king to the eighth rank.
+While it started rather strong, *racing kings* has become the least popular chess variant.
+
+I think people have tortured this poor little king enough anyways...
 
 ------
 <a name="threecheck"></a>
-#### Three Check
+#### Three-Check
+
+In [three-check chess](https://en.wikipedia.org/wiki/Three-check_chess) the player wins who first checks his opponent's king three times.
 
 <div>
 <center>
 <script
     src="bar_threecheck.js"
-    id="4b44fb9a-bf64-4df0-b05d-e307b8adc587"
-    data-bokeh-model-id="5ca01cfe-db1f-40e5-9984-1f6173975ca5"
-    data-bokeh-doc-id="8387b85f-20df-4f20-911a-5b714111086d"
+    id="bc873bd7-c6f6-454b-bdc2-8b374319bfa2"
+    data-bokeh-model-id="8488f7bb-5a6b-4412-b185-2d7fc55e4c3b"
+    data-bokeh-doc-id="624cfd61-c94c-4553-9035-54ff7cdff55b"
 ></script>
-</div>
 </center>
+</div>
 
-In [Three-check chess](https://en.wikipedia.org/wiki/Three-check_chess) the player wins who first checks his opponent's king three times.
+Who can explain the peak number of games played in january?
 
+------
+**Feedback**
 
+This is my first blog post, therefore I am especially looking forward to your feedback and comments.
 
-
-
-
-
-
-
-
+Did you spot an error, solve one of my questions, find something interesting? Did you (not) like it? Are you hungry?
+In any case, let me know :)
 
 
 ------
-#### Bonus
-
-Finally, let's take a brief look at the total number of standard games played.
-
-
-------
-####  Thanks and shout out to...
+####  Thanks to...
 
 - [Bokeh](https://bokeh.pydata.org/en/latest/): <i>a fantastic "interactive visualization library for Python that enables beautiful and meaningful visual presentation of data in modern web browsers. With Bokeh, you can quickly and easily create interactive plots, dashboards, and data applications."
 </i>
