@@ -1,8 +1,8 @@
 [project]
 name = skervim
 
-[servers.ghpages]
-target = ghpages+https://skervim/skervim.github.io
+[servers.production]
+target = ghpages+https://skervim/skervim.github.io?cname=www.skervim.com
 
 [packages]
 lektor-disqus-comments = 0.2
