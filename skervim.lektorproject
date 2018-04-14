@@ -1,7 +1,7 @@
 [project]
 name = skervim
 
-[servers.production]
+[servers.ghpages]
 target = ghpages+https://skervim/skervim.github.io?cname=www.skervim.com
 
 [packages]
