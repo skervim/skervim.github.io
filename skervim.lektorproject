@@ -8,4 +8,4 @@ target = ghpages+https://skervim/skervim.github.io?cname=www.skervim.com
 lektor-disqus-comments = 0.2
 lektor-webpack-support = 0.4
 lektor-markdown-highlighter = 0.2
-
+lektor-google-analytics = 0.1.3
