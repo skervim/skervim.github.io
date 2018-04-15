@@ -1,0 +1,311 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- og properties -->
+<meta property="og:title" content="Skervim">
+<meta property="og:image" content="https://s18.postimg.cc/q67shnrpl/skervim.jpg">
+<meta property="og:image:type" content="image/jpg">
+
+
+<link rel="shortcut icon" href="../../static/img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../static/gen/styles.css?h=067087bb">
+<link rel="stylesheet" href="../../static/normalize.css">
+<link rel="stylesheet" href="../../static/main.css">
+<link rel="stylesheet" href="../../static/pygments.css">
+
+
+<!-- Lichess widgets -->
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css" />
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/dark.css" />
+<script src="https://rubenwardy.com/lichess_widgets/lichess_widgets.js"></script>
+
+
+
+
+<!-- Font -->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+
+<title>Chess Variants and their Popularity at Lichess — SKERVIM</title>
+</head>
+<body>
+  <header>
+    <h1>SKERVIM</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><a href="../../">Welcome</a></li>
+        
+          <li class="active"><a href="../../blog/">Blog</a></li>
+        
+          <li><a href="../../projects/">Projects</a></li>
+        
+          <li><a href="../../about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    
+  
+  <div class="blog-post">
+  
+    <h2>Chess Variants and their Popularity at Lichess</h2>
+  
+  <p class="meta">
+    written by
+    
+      <a href="https://twitter.com/skervim">skervim</a>
+    
+    on 2018-04-14
+  </p>
+  <hr>
+<p>I was curious about the popularity of chess variants at <a href="https://lichess.org/">https://lichess.org</a>.</p>
+<p>So I grabbed the data from the lichess game <a href="https://database.lichess.org/">database</a> and created some visualizations.</p>
+<hr>
+<h4><em>Average</em> number of games played per <em>year</em> and variant</h4>
+<p>Let's start with an overview and look at the <em>average</em> number of games played per year.</p>
+<div>
+<center>
+<script
+    src="multibars_year.js"
+    id="270a2125-1395-4efb-ab6b-f6d36e365fdf"
+    data-bokeh-model-id="659cea59-c725-4d0b-98d7-b21dedf4a01b"
+    data-bokeh-doc-id="0498cf74-2fda-4441-88b0-01ac44049c51"
+></script>
+</center>
+</div><center><small>Use the tools in the toolbar on the right to zoom in and out!</small></center><div>
+<center>
+<script
+    src="heatmap_year.js"
+    id="0d7d3671-1006-4c4b-9f94-797ee2dcd4f2"
+    data-bokeh-model-id="549d8f79-f604-4a96-a49e-d3daf0432fe8"
+    data-bokeh-doc-id="6b291651-d591-423e-bb73-401befbc6436"
+></script>
+</center>
+</div><center><small>Hover over the heatmap with your mouse for more information.</small></center><p>As you can see, the most popular variants happen to be <em>crazyhouse</em>, <em>antichess</em> and <em>atomic chess</em>,
+followed by <em>chess960</em> and <em>three-check chess</em>. Less popular variants include <em>horde</em>, <em>king of the hill</em> and <em>racing kings</em>.</p>
+<p>Let's get more specific!</p>
+<hr>
+<h4><em>Total</em> number of games played per <em>month</em> and variant</h4>
+<div>
+<center>
+<script
+    src="curves_month.js"
+    id="d73fd061-5b1d-400a-9810-5407364826ec"
+    data-bokeh-model-id="c53bfa3b-260f-4d69-af7e-ffebc2617876"
+    data-bokeh-doc-id="fb37baad-fab1-4b07-8dfd-d8bcd45078cc"
+></script>
+</center>
+</div><p>Clearly you can see: more and more games of chess variants are played on lichess over time.</p>
+<p>In the following we will look at which variants are gaining most in popularity!</p>
+<hr>
+<p>Choose a chess variant and click on it in order to directly jump to the corresponding plot!</p>
+<ul>
+<li><a href="../../blog/lichess-variants/#antichess">Antichess</a></li>
+<li><a href="../../blog/lichess-variants/#atomic">Atomic</a></li>
+<li><a href="../../blog/lichess-variants/#chess960">Chess960</a></li>
+<li><a href="../../blog/lichess-variants/#crazyhouse">Crazyhouse</a></li>
+<li><a href="../../blog/lichess-variants/#horde">Horde</a></li>
+<li><a href="../../blog/lichess-variants/#kingofthehill">King of the hill</a></li>
+<li><a href="../../blog/lichess-variants/#racingkings">Racing Kings</a></li>
+<li><a href="../../blog/lichess-variants/#threecheck">Three-Check</a></li>
+</ul>
+<hr>
+<p><a name="antichess"></a></p>
+<h4>Antichess</h4>
+<p>In <a  href='https://en.wikipedia.org/wiki/Losing_Chess'> antichess </a> the objective is to <i>lose</i> all your peaces (or reach a stalemate).</p>
+<div>
+<center>
+<script
+    src="bar_antichess.js"
+    id="17fdfa5d-d806-44bf-afab-34fd9723ffc8"
+    data-bokeh-model-id="6909e13c-cf6a-4584-992a-0a23f47f47ea"
+    data-bokeh-doc-id="6f3aa140-a093-4c12-93d7-1dc85c2f6300"
+></script>
+</center>
+</div><p>The number of games played per month of <em>antichess</em> - the second most popular chess variant on lichess - increases steadily. In march, <strong>154723</strong> games were played!</p>
+<hr>
+<p><a name="atomic"></a></p>
+<h4>Atomic</h4>
+<p>In <a href='https://en.wikipedia.org/wiki/Atomic_chess'> atomic chess </a> captures result in a nuclear explosion destroying all surrounding pieces -  except pawns.</p>
+<div>
+<center>
+<script
+    src="bar_atomic.js"
+    id="7ff36197-1463-43e8-b8d8-3c3b47002f7f"
+    data-bokeh-model-id="ba0bab12-a254-492f-adae-ecafa622267b"
+    data-bokeh-doc-id="83edba13-56b2-480f-bc27-f4ec84ac3709"
+></script>
+</center>
+</div><p><em>Atomic chess</em> had its peak in february but is still gaining robustly in popularity.</p>
+<hr>
+<p><a name="chess960"></a></p>
+<h4>Chess960</h4>
+<p>In <a href='https://en.wikipedia.org/wiki/Chess960'> Chess960 </a> the starting position of the pieces on both players' home ranks is randomized (<em>960</em> is the number of possible starting formations).</p>
+<div>
+<center>
+<script
+    src="bar_chess960.js"
+    id="87d881ce-7633-4ca7-abcf-4a6591e23eac"
+    data-bokeh-model-id="b37bef08-1fb3-47fe-a3b9-e8348f430bd2"
+    data-bokeh-doc-id="7bae4299-334a-49ca-9ed9-1ffbdb9c1744"
+></script>
+</center>
+</div><p>Also, more and more played is <em>Chess960</em>. What a beautiful increase, right?</p>
+<hr>
+<p><a name="crazyhouse"></a></p>
+<h4>Crazyhouse</h4>
+<p><a href="https://en.wikipedia.org/wiki/Crazyhouse">Crazyhouse</a> allows players to introduce captured pieces back to the board as their <em>own</em>. Crazy, right?</p>
+<div>
+<center>
+<script
+    src="bar_crazyhouse.js"
+    id="6e71fa72-ca90-440e-a815-124a792da6de"
+    data-bokeh-model-id="98bd75ed-0677-4017-9264-a7f073fa9829"
+    data-bokeh-doc-id="d902c909-8fb2-4b05-9292-a08d98cd58bb"
+></script>
+</center>
+</div><p>While crazyhouse had its peak in march (<strong>183112</strong> games), it's popularity isn't increasing that much.
+Still, it's the most popular chess variant on lichess!</p>
+<hr>
+<p><a name="horde"></a></p>
+<h4>Horde</h4>
+<p>In the <a href="https://en.wikipedia.org/wiki/Dunsany%27s_Chess">horde</a> chess variant a horde of  (32!) bloodthirsty pawns has to be defeated.</p>
+<div>
+<center>
+<script
+    src="bar_horde.js"
+    id="27923c6c-7a01-43a1-a38f-b1cb36ace64f"
+    data-bokeh-model-id="c210cf1a-cf9f-4185-a4eb-fd5d9eefe69e"
+    data-bokeh-doc-id="99618ace-fff3-4d6a-82a6-8a8bff01b60b"
+></script>
+</center>
+</div><p>Despite being scary, it's also getting more popular!</p>
+<hr>
+<p><a name="kingofthehill"></a></p>
+<h4>King of the hill</h4>
+<p>In <em>King of the hill</em> a player is victorious if she moves her king to one of the central four squares (or in case of the usual checkmate).</p>
+<div>
+<center>
+<script
+    src="bar_kingofthehill.js"
+    id="baf4dcb6-394d-4350-88c4-54fc7210f392"
+    data-bokeh-model-id="9dfc4604-a22f-4e23-b915-05d0e2b2da3f"
+    data-bokeh-doc-id="dcc1014b-a241-453a-94a0-fa7264d51cfe"
+></script>
+</center>
+</div><p><em>King of the hill</em> seems to get played less lately. Do you know why?</p>
+<hr>
+<p><a name="racingkings"></a></p>
+<h4>Racing Kings</h4>
+<p>To win this chess variant you must race your king to the eighth rank
+(<small>a pure psychological and physical torture for the poor slow king.</small>)</p>
+<div>
+<center>
+<script
+    src="bar_racingkings.js"
+    id="63f0e314-08a6-4630-ab7f-5ceea3ca3e54"
+    data-bokeh-model-id="0cbc76ef-0e4d-4cba-ba5e-858cb1ec5c7e"
+    data-bokeh-doc-id="b324a552-7ed7-43fe-ab0c-faf9f6917c8f"
+></script>
+</center>
+</div><p>While it started rather strong, <em>racing kings</em> has become the least popular chess variant.</p>
+<p>I think people have tortured this poor little king enough anyways...</p>
+<hr>
+<p><a name="threecheck"></a></p>
+<h4>Three-Check</h4>
+<p>In <a href="https://en.wikipedia.org/wiki/Three-check_chess">three-check chess</a> the player wins who first checks his opponent's king three times.</p>
+<div>
+<center>
+<script
+    src="bar_threecheck.js"
+    id="bc873bd7-c6f6-454b-bdc2-8b374319bfa2"
+    data-bokeh-model-id="8488f7bb-5a6b-4412-b185-2d7fc55e4c3b"
+    data-bokeh-doc-id="624cfd61-c94c-4553-9035-54ff7cdff55b"
+></script>
+</center>
+</div><p>Who can explain the peak number of games played in january?</p>
+<hr>
+<p><strong>Feedback</strong></p>
+<p>This is my first blog post, therefore I am especially looking forward to your feedback and comments.</p>
+<p>Did you spot an error, solve one of my questions, find something interesting? Did you (not) like it? Are you hungry?
+In any case, let me know :)</p>
+<hr>
+<h4>Thanks to...</h4>
+<ul>
+<li><p><a href="https://bokeh.pydata.org/en/latest/">Bokeh</a>: <i>a fantastic "interactive visualization library for Python that enables beautiful and meaningful visual presentation of data in modern web browsers. With Bokeh, you can quickly and easily create interactive plots, dashboards, and data applications."
+</i></p>
+</li>
+<li><p><a href="https://holoviews.org/">Holoviews</a>:
+ The awesome <i>"high-level declarative interface to Bokeh for exploring and interacting with data"</i> that I used.</p>
+</li>
+<li><p>And last but not least <a href="https://lichess.org">Lichess</a>: <i>"the forever free, adless and open source chess server"</i> :)</p>
+</li>
+</ul>
+<hr>
+
+  </div>
+
+   <div class="comments">
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/blog/lichess-variants"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//skervim.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+</div>
+
+  </div>
+
+    
+    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 icon-bar">
+          <a href="https://github.com/skervim/" title="Skervim on GitHub"
+            ><i class="fa fa-github"></i></a>
+          <a href="https://github.com/skervim/skervim.github.io/issues/" title="Report Issues for skervim"
+            ><i class="fa fa-bug"></i></a>
+          <a href="https://twitter.com/skervim" title="Find skervim on Twitter"
+            ><i class="fa fa-twitter"></i></a>
+        <a href="https://www.reddit.com/user/skervim" title='Find skervim at Reddit'
+           ><i class="fa fa-reddit"></i></a>
+          <a href="https://github.com/skervim/skervim.github.io/tree/source/content/blog/lichess-variants/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+    </footer>
+    
+
+
+<!-- js -->
+<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<div class="ga-script">
+<div id="ga-script"></div>
+<script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-117557620-1', 'auto');
+        ga('send', 'pageview');
+</script>
+</div>
+
+<script type=text/javascript src="" charset="utf-8"></script>
+
+</body>
