@@ -1,76 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="lichess-variants">
-    <meta name="keywords" content="lichess-variants">
-    
-    
-    <title>Chess Visualization</title>
-    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-    <link rel="icon" href="">
-    <!-- Bootstrap core CSS -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css?h=1ae238d0" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="../../vendor/font-awesome/css/font-awesome.min.css?h=512c7d79" rel="stylesheet">
-    <link href="../../vendor/devicons/css/devicons.min.css?h=4d907aef" rel="stylesheet">
-    <link href="../../vendor/simple-line-icons/css/simple-line-icons.css?h=d7038901" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="../../css/resume.min.css?h=409cae7b" rel="stylesheet">
-      <!-- Google Analytics -->
-      
-        <script>
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-         ga('create', 'your_google_analytics_id', 'auto');
-         ga('send', 'pageview');
-        </script>
-      
-      
-  </head>
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="../../">
-        <span class="d-block d-lg-none">
-          
-            skervim.com
-          
-        </span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../../img/profile.jpg?h=64770358" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav">
-            <li  class="nav-item" ><a class="nav-link" href="../../">About</a></li>
-              
-              <li  class="nav-item"><a class="nav-link" href="../../experience/">Experience</a></li>
-            
-              <li  class="nav-item"><a class="nav-link" href="../../skills/">Skills</a></li>
-            
-              <li  class="nav-item active" ><a class="nav-link" href="../../blog/">Blog</a></li>
-            
-              <li  class="nav-item"><a class="nav-link" href="../../projects/">Projects</a></li>
-            
-          </ul>
-      </div>
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- og properties -->
+<meta property="og:title" content="Skervim">
+<meta property="og:image" content="https://s18.postimg.cc/q67shnrpl/skervim.jpg">
+<meta property="og:image:type" content="image/jpg">
+
+
+<link rel="shortcut icon" href="../../static/img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../static/gen/styles.css?h=067087bb">
+<link rel="stylesheet" href="../../static/normalize.css">
+<link rel="stylesheet" href="../../static/main.css">
+<link rel="stylesheet" href="../../static/pygments.css">
+
+
+<!-- Lichess widgets -->
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css" />
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/light.css" />
+<link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/dark.css" />
+<script src="https://rubenwardy.com/lichess_widgets/lichess_widgets.js"></script>
+
+
+
+
+<!-- Font -->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+
+<title>Chess Variants and their Popularity at Lichess — SKERVIM</title>
+</head>
+<body>
+  <header>
+    <h1>SKERVIM</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><a href="../../">Welcome</a></li>
+        
+          <li class="active"><a href="../../blog/">Blog</a></li>
+        
+          <li><a href="../../projects/">Projects</a></li>
+        
+          <li><a href="../../about/">About</a></li>
+        
+      </ul>
     </nav>
+  </header>
   <div class="page">
     
-<section class="resume-section p-3 p-lg-5 d-flex flex-column">
-  <div class="my-auto">
   
   <div class="blog-post">
   
-    <h2>Chess Visualization</h2>
+    <h2>Chess Variants and their Popularity at Lichess</h2>
   
   <p class="meta">
     written by
@@ -79,7 +63,6 @@
     
     on 2018-04-14
   </p>
-  
   <hr>
 <p>I was curious about the popularity of chess variants at <a href="https://lichess.org/">https://lichess.org</a>.</p>
 <p>So I grabbed the data from the lichess game <a href="https://database.lichess.org/">database</a> and created some visualizations.</p>
@@ -266,11 +249,9 @@ In any case, let me know :)</p>
 </ul>
 <hr>
 
-  
   </div>
-  
-  <br>
-  <div class="comments">
+
+   <div class="comments">
 <div id="disqus_thread"></div>
 <script>
   var disqus_config = function() { this.page.identifier = "/blog/lichess-variants"; };
@@ -287,24 +268,44 @@ In any case, let me know :)</p>
 </noscript>
 </div>
 
-
-</div>
-</section>
-
   </div>
-  <footer>
-    
-    &copy; Copyright 2018 skervim
-    
-  </footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="../../vendor/jquery/jquery.min.js?h=0dc32db4"></script>
-  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js?h=2d938043"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="../../vendor/jquery-easing/jquery.easing.min.js?h=bde98133"></script>
+    
+    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 icon-bar">
+          <a href="https://github.com/skervim/" title="Skervim on GitHub"
+            ><i class="fa fa-github"></i></a>
+          <a href="https://github.com/skervim/skervim.github.io/issues/" title="Report Issues for skervim"
+            ><i class="fa fa-bug"></i></a>
+          <a href="https://twitter.com/skervim" title="Find skervim on Twitter"
+            ><i class="fa fa-twitter"></i></a>
+        <a href="https://www.reddit.com/user/skervim" title='Find skervim at Reddit'
+           ><i class="fa fa-reddit"></i></a>
+          <a href="https://github.com/skervim/skervim.github.io/tree/source/content/blog/lichess-variants/contents.lr" title="View source for this page"><i class="fa fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+    </footer>
+    
 
-  <!-- Custom scripts for this template -->
-  <script src="../../js/resume.min.js?h=784eafa4"></script>
+
+<!-- js -->
+<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<div class="ga-script">
+<div id="ga-script"></div>
+<script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-117557620-1', 'auto');
+        ga('send', 'pageview');
+</script>
+</div>
+
+<script type=text/javascript src="" charset="utf-8"></script>
+
 </body>
-</html>
